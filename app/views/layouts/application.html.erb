@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="CodePouch">
+<html>
 <head>
   <title>CodePouch</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<div ui-view>
-
-</div>
+<body ng-app="CodePouch">
+  <h1>This should work</h1>
+  <div ui-view>
+    
+  </div>
 
 </body>
 </html>
