@@ -4,6 +4,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'dotenv-rails'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'angularjs-rails'
+gem 'angular-rails-templates'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
