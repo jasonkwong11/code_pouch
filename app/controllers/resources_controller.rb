@@ -14,6 +14,15 @@ class ResourcesController < ApplicationController
     render json: resource
   end
 
+  def update
+    resource = Resource.find(params[:data][:id])
+    resource.description = params[:data][:description]
+    resource.category = params[:data][:category]
+    resource.upvote = params[:data][:upvotes]
+    resource.save
+    render json: resource
+  end
+
   def show
     render json: Resource.find(params[:id])
   end
