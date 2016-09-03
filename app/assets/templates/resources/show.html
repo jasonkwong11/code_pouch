@@ -1,10 +1,22 @@
 <div ng-controller="ResourceCtrl as vm">
   <h1>{{vm.resource.name}}</h1>
-  <button type="button" class="btn btn-default" ng-click="vm.downVote()">
-    <span class="glyphicon glyphicon-chevron-down"></span>
-  </button>
-  <p class="upvotes">{{vm.resource.upvote}}</p>
-  <button type="button" class="btn btn-default" ng-click="vm.upVote()">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </button>
+  <h4><a href="{{vm.resource.url}}">{{vm.resource.url}}</a></h4>
+
+  <div class="votes">
+    <button type="button" class="btn btn-default" ng-click="vm.downVote()">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+    </button>
+
+    <p class="upvotes">{{vm.resource.upvote}}</p>
+
+    <button type="button" class="btn btn-default" ng-click="vm.upVote()">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </button>
+  </div>
+
+  <div class="description">
+    <p>
+      {{vm.resource.description}}
+    </p>
+  </div>
 </div>
