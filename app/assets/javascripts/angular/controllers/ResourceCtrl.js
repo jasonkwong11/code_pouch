@@ -6,6 +6,10 @@ function ResourceCtrl($scope, Resource, $stateParams) {
   self.upVote = function () {
     self.resource.upvote += 1;
   };
+
+  self.downVote = function () {
+    self.resource.upvote -= 1;
+  };
 }
 
 ResourceCtrl.$inject = ['$scope', 'Resource', '$stateParams'];

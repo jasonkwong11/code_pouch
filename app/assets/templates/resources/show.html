@@ -1,6 +1,6 @@
 <div ng-controller="ResourceCtrl as vm">
   <h1>{{vm.resource.name}}</h1>
-  <button type="button" class="btn btn-default">
+  <button type="button" class="btn btn-default" ng-click="vm.downVote()">
     <span class="glyphicon glyphicon-chevron-down"></span>
   </button>
   <p class="upvotes">{{vm.resource.upvote}}</p>
