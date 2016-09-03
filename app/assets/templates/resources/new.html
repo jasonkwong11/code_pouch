@@ -1,1 +1,36 @@
-<h1>Thanks for creating a new resource!</h1>
+<div ng-controller="CreateResourceCtrl as vm">
+  <h1>New Resource</h1>
+  <p>Thank you for continuing to improve our project! The more resources we have to share, the more people get the chance to learn!</p>
+  <form ng-submit="vm.createResource()" name="resourceForm">
+    <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2"></span>
+      <input class="form-control" placeholder="Resource Title" ng-model="vm.resource.name" type="text" name="name">
+    </div>
+
+    <br>
+
+    <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2"></span>
+      <input class="form-control" type="text" name="category" ng-model="vm.resource.category" placeholder="Resource Category">
+    </div>
+
+    <br>
+
+    <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2">http://www.example.com/</span>
+      <input class="form-control" type="url" name="url" ng-model="vm.resource.url" placeholder="Resource URL">
+    </div>
+
+    <br>
+
+    <div class="input-group">
+      <span class="input-group-addon" id="sizing-addon2"></span>
+      <input class="form-control" type="text" name="description" ng-model="vm.resource.description" placeholder="Resource Description">
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>

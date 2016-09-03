@@ -6,9 +6,10 @@ function CreateResourceCtrl($scope, Resource, $window, $http) {
     $http({
       method: 'POST',
       url: '/api/resources',
-      data: {data: this.resrouce}
+      data: {data: this.resource}
     })
     .success(function (data) {
+      debugger;
       this.lecture = data.lecture;
       $window.location.href = '/resources/' + data.id;
     });
