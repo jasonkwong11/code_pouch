@@ -5,6 +5,7 @@ function ResourceCtrl($scope, Resource, $stateParams) {
 
   self.upVote = function () {
     self.resource.upvote += 1;
+    self.resource.$update();
   };
 
   self.downVote = function () {
