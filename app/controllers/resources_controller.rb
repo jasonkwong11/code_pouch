@@ -4,7 +4,14 @@ class ResourcesController < ApplicationController
   end
 
   def create
-    raise params.inspect
+    resource = Resource.create()
+    resource.name = params[:data][:name]
+    resource.url = params[:data][:url]
+    resource.description = params[:data][:description]
+    resource.category = params[:data][:category]
+    resource.upvote = 0
+    resource.save
+    render json: resource
   end
 
   def show

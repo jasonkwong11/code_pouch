@@ -10,7 +10,7 @@ function CreateResourceCtrl($scope, Resource, $window, $http) {
     })
     .success(function (data) {
       this.lecture = data.lecture;
-      $window.location.href = '/resources/' + data.id;
+      $window.location.href = '/#/resources/' + data.id;
     });
   };
 }
