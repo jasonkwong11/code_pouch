@@ -10,6 +10,7 @@ function ResourceCtrl($scope, Resource, $stateParams) {
 
   self.downVote = function () {
     self.resource.upvote -= 1;
+    self.resource.$update();
   };
 }
 
