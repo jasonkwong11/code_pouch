@@ -6,6 +6,10 @@ angular
         url: "/",
         templateUrl: "index.html",
       })
+      .state("about", {
+        url: "/about",
+        templateUrl: "about.html"
+      })
       .state('resources', {
         url: "/resources",
         templateUrl: "resources/index.html",
