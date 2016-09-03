@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: code_pouch_production
-  username: code_pouch
-  password: <%= ENV['CODE_POUCH_DATABASE_PASSWORD'] %>

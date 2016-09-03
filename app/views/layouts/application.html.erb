@@ -7,9 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="CodePouch">
-  <h1>This should work</h1>
-  <div ui-view>
-    
+
+  <%= render partial: "layouts/navigation" %>
+
+  <div class="container" ui-view>
+
   </div>
 
 </body>
