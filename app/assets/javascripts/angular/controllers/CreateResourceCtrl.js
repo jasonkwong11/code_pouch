@@ -1,5 +1,6 @@
 function CreateResourceCtrl($scope, Resource) {
-
+  var self = this;
+  self.resource = {};
 }
 
 angular
