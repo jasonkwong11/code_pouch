@@ -1,28 +1,59 @@
-== README
+# code_pouch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Summary
 
-Things you may want to cover:
+This is a single page angular app for the purpose of collecting coding resources. I am hoping for this to be a community maintained project to help anyone learning to code. This is basically a searchable bookmark system for coding resources.
 
-* Ruby version
+## Installation
 
-* System dependencies
+To run this simply clone or fork it, run `bundle install`, `rake db:migrate` and then `rails s`.
 
-* Configuration
+Bower is included in the gem so if you want to add some front end dependencies, add them to the bower.json file and run `rake bower:install`
 
-* Database creation
+## Details
 
-* Database initialization
+Bootstrap is used for the styles.
 
-* How to run the test suite
+RSPEC is the testing framework for the rails backend.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Known Bugs
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## License
+
+MIT
+
+# Contribution Guide
+
+## Status
+**READY/IN DEVELOPMENT/HOLD**
+
+## Migrations
+YES | NO
+
+## Description
+A few sentences describing the overall goals of the pull request's commits.
+
+## Todos
+- [ ] Tests
+- [ ] Documentation
+
+## Deploy Notes
+Notes regarding deployment the contained body of work.  These should note any
+db migrations, etc.
+
+## Steps to Test or Reproduce
+Outline the steps to test or reproduce the PR here.
+
+```sh
+git pull --prune
+git checkout <feature_branch>
+bundle; script/server
+```
+
+## Impacted Areas in Application
+List general components of the application that this PR will affect:
+
+## Conclusion
+
+Thanks for looking and if you would like to use it feel free!
