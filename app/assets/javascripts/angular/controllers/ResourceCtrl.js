@@ -2,6 +2,10 @@ function ResourceCtrl($scope, Resource, $stateParams) {
   var self = this;
 
   self.resource = Resource.get({id: $stateParams.id});
+
+  self.upVote = function () {
+    self.resource.upvote += 1;
+  };
 }
 
 ResourceCtrl.$inject = ['$scope', 'Resource', '$stateParams'];
