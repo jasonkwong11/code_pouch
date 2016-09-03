@@ -2,6 +2,6 @@
 
 <div ng-controller="ResourcesCtrl as vm">
   <div ng-repeat="resource in vm.resources">
-    <p>{{resource.name}} - {{resource.description}}</p>
+    <p><a ui-sref="show({id: {{resource.id}}})">{{resource.name}}</a> - {{resource.description}}</p>
   </div>
 </div>
