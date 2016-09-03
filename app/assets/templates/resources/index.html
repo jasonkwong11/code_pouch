@@ -1,7 +1,15 @@
 <h1>Welcome to the Resources page.</h1>
 
 <div ng-controller="ResourcesCtrl as vm">
-  <div ng-repeat="resource in vm.resources">
+  <div class="col-md-12 search">
+    <br>
+    <div class="input-group input-group-md">
+      <span class="input-group-addon" id="sizing-addon1"><strong>Search</strong></span>
+      <input ng-model="vm.search" ng-change="vm.refilter()" class="form-control" placeholder="e.g. Ruby, Rails, JavaScript" />
+    </div>
+  </div>
+
+  <div ng-repeat="resource in vm.filteredList">
     <p><a ui-sref="show({id: {{resource.id}}})">{{resource.name}}</a> - {{resource.description}}</p>
   </div>
 </div>
