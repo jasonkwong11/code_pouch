@@ -4,6 +4,7 @@ class ResourcesController < ApplicationController
   end
 
   def create
+    raise params.inspect
   end
 
   def show
