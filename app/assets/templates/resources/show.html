@@ -1,3 +1,10 @@
 <div ng-controller="ResourceCtrl as vm">
   <h1>{{vm.resource.name}}</h1>
+  <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-chevron-down"></span>
+  </button>
+  <p class="upvotes">{{vm.resource.upvote}}</p>
+  <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </button>
 </div>
