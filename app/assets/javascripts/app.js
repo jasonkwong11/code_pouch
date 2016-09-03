@@ -10,6 +10,10 @@ angular
         url: "/resources",
         templateUrl: "resources/index.html",
         controller: "ResourceCtrl"
+      })
+      .state('new', {
+        url: "/resources/new",
+        templateUrl: "resources/new.html",
       });
     $urlRouterProvider.otherwise('/');
   });
