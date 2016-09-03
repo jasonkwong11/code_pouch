@@ -1,0 +1,3 @@
+function ResourceCtrl($scope, Resource) {
+  
+}
