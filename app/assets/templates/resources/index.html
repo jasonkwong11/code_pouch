@@ -1,7 +1,7 @@
 <h1>Welcome to the Resources page.</h1>
 
-<div ng-controller="ResourceCtrl as resource">
-  <div ng-repeat="resource in resource.resources">
+<div ng-controller="ResourcesCtrl as vm">
+  <div ng-repeat="resource in vm.resources">
     <p>{{resource.name}} - {{resource.description}}</p>
   </div>
 </div>

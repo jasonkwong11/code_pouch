@@ -13,7 +13,7 @@ angular
       .state('resources', {
         url: "/resources",
         templateUrl: "resources/index.html",
-        controller: "ResourceCtrl"
+        controller: "ResourcesCtrl"
       })
       .state('new', {
         url: "/resources/new",

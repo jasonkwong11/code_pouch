@@ -4,4 +4,4 @@ function Resource($resource) {
 
 angular
   .module("CodePouch")
-  .factory("Resource", Resource)
+  .factory("Resource", Resource);
