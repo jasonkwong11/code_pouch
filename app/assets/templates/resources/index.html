@@ -1,5 +1,7 @@
 <h1>Welcome to the Resources page.</h1>
 
 <div ng-controller="ResourceCtrl as resource">
-  <div ng-repeat=""></div>
+  <div ng-repeat="resource in resource.resources">
+    {{resource.name}}
+  </div>
 </div>
