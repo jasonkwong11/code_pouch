@@ -1,5 +1,7 @@
 function Resource($resource) {
-  return $resource('/api/resources/:id');
+  return $resource('/api/resources/:id',{
+    id: '@id'
+  });
 }
 
 Resource.$inject = ['$resource'];
