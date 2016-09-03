@@ -1,10 +1,10 @@
-function ResourcesCtrl($scope, Resource) {
+function ResourcesCtrl($scope, Resource, $filter) {
   var self = this;
 
   self.resources = Resource.query();
 }
 
-ResourcesCtrl.$inject = ["$scope", "Resource"];
+ResourcesCtrl.$inject = ["$scope", "Resource", '$filter'];
 
 angular
   .module("CodePouch")
