@@ -4,28 +4,52 @@
   <form ng-submit="vm.createResource()" name="resourceForm">
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon2"></span>
-      <input class="form-control" placeholder="Resource Title" ng-model="vm.resource.name" type="text" name="name">
+      <input class="form-control" placeholder="Resource Title" ng-model="vm.resource.name" type="text" name="name" required="required" minlenght="3">
+      <div ng-if="resourceForm.name.$touched && resourceForm.name.$error.required" class="text-danger">
+        Title is required.
+      </div>
+      <div ng-if="resourceForm.name.$touched && resourceForm.name.$error.minlength" class="text-danger">
+        Title must be at least 3 characters.
+      </div>
     </div>
 
     <br>
 
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon2"></span>
-      <input class="form-control" type="text" name="category" ng-model="vm.resource.category" placeholder="Resource Category">
+      <input class="form-control" type="text" name="category" ng-model="vm.resource.category" placeholder="Resource Category" required="required" minlength="3">
+      <div ng-if="resourceForm.category.$touched && resourceForm.category.$error.required" class="text-danger">
+        Category is required.
+      </div>
+      <div ng-if="resourceForm.category.$touched && resourceForm.category.$error.minlength" class="text-danger">
+        Category must be at least three characters.
+      </div>
     </div>
 
     <br>
 
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon2">http://www.example.com/</span>
-      <input class="form-control" type="url" name="url" ng-model="vm.resource.url" placeholder="Resource URL">
+      <input class="form-control" type="url" name="url" ng-model="vm.resource.url" placeholder="Resource URL" required="required" minlength="10">
+      <div ng-if="resourceForm.url.$touched && resourceForm.url.$error.required" class="text-danger">
+        URL is required.
+      </div>
+      <div ng-if="resourceForm.url.$touched && resourceForm.url.$error.minlength" class="text-danger">
+        The url will be at least 10 characters.
+      </div>
     </div>
 
     <br>
 
     <div class="input-group">
       <span class="input-group-addon" id="sizing-addon2"></span>
-      <input class="form-control" type="text" name="description" ng-model="vm.resource.description" placeholder="Resource Description">
+      <input class="form-control" type="text" name="description" ng-model="vm.resource.description" placeholder="Resource Description" required="required" minlength="20">
+      <div ng-if="resourceForm.description.$touched && resourceForm.description.$error.required" class="text-danger">
+        The description is required.
+      </div>
+      <div ng-if="resourceForm.description.$touched && resourceForm.description.$error.minlenght" class="text-danger">
+        Description needs to be at least 20 characters.
+      </div>
     </div>
 
     <br>
@@ -33,8 +57,4 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 
   </form>
-</div>
-
-<div>
-  {{resource.name}}
 </div>
