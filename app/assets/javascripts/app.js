@@ -5,6 +5,10 @@ angular
       .state('home', {
         url: "/",
         templateUrl: "index.html",
+      })
+      .state('resources', {
+        url: "/resources",
+        templateUrl: "resources/index.html",
         controller: "ResourceCtrl"
       });
     $urlRouterProvider.otherwise('/');
