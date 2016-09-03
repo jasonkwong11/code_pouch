@@ -15,6 +15,8 @@ function CreateResourceCtrl($scope, Resource, $window, $http) {
   };
 }
 
+CreateResourceCtrl.$inject = ['$scope', 'Resource', '$window', '$http'];
+
 angular
   .module("CodePouch")
   .controller("CreateResourceCtrl", CreateResourceCtrl);

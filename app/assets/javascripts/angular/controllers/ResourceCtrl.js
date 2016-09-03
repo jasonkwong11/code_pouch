@@ -4,6 +4,8 @@ function ResourceCtrl($scope, Resource, $stateParams) {
   self.resource = Resource.get({id: $stateParams.id});
 }
 
+ResourceCtrl.$inject = ['$scope', 'Resource', '$stateParams'];
+
 angular
   .module("CodePouch")
   .controller("ResourceCtrl", ResourceCtrl);

@@ -4,6 +4,8 @@ function GetResourceService($http) {
   };
 }
 
+GetResourceService.$inject = ['$http']
+
 angular
   .module("CodePouch")
   .service("GetResourceService", GetResourceService);
