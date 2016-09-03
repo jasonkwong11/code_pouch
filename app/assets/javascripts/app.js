@@ -15,14 +15,14 @@ angular
         templateUrl: "resources/index.html",
         controller: "ResourcesCtrl"
       })
+      .state('new', {
+        url: "/resources/new",
+        templateUrl: "resources/new.html",
+      })
       .state("show", {
         url: '/resources/:id',
         templateUrl: 'resources/show.html',
         controller: 'ResourceCtrl'
-      })
-      .state('new', {
-        url: "/resources/new",
-        templateUrl: "resources/new.html",
       });
     $urlRouterProvider.otherwise('/');
   });
