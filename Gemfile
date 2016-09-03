@@ -6,6 +6,7 @@ gem 'dotenv-rails'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'angularjs-rails'
 gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
