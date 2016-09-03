@@ -5,5 +5,5 @@ function GetResourceService($http) {
 }
 
 angular
-  .module("CodePunch")
+  .module("CodePouch")
   .service("GetResourceService", GetResourceService);
