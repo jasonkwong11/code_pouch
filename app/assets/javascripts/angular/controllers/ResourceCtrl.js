@@ -4,6 +4,8 @@ function ResourceCtrl($scope, Resource) {
   self.resources = Resource.query();
 }
 
+ResourceCtrl.$inject = ["$scope", "Resource"];
+
 angular
   .module("CodePouch")
   .controller('ResourceCtrl', ResourceCtrl);
