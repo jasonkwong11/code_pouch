@@ -3,7 +3,8 @@
 <div ng-controller="ResourcesCtrl as vm">
   <div>
     <h3>Categories</h3>
-    <div ng-repeat="category in vm.getCategories()">
+    <button class="btn btn-default categories" ng-click="showDetails = ! showDetails">Show Categories</button>
+    <div ng-repeat="category in vm.getCategories()" ng-show="showDetails">
       <label>
         <input type="checkbox" ng-model="vm.filter[category]">
         {{ category }}
