@@ -16,7 +16,12 @@ Bootstrap is used for the styles.
 
 RSPEC is the testing framework for the rails backend.
 
-## Known Bugs
+## Future Plans
+
+I fully intend on integrating the disqus api on each resource page.
+
+There is going to be user authentication added soon.
+
 
 
 ## License
