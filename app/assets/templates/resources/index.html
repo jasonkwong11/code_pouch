@@ -1,6 +1,13 @@
 <h1>Welcome to the Resources page.</h1>
 
 <div ng-controller="ResourcesCtrl as vm">
+  <div>
+    <h3>Categories</h3>
+    <div ng-repeat="category in vm.getCategories()">
+
+    </div>
+  </div>
+
   <div class="col-md-12 search">
     <br>
     <div class="input-group input-group-md">
