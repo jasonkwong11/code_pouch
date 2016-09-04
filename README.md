@@ -22,7 +22,9 @@ I fully intend on integrating the disqus api on each resource page.
 
 There is going to be user authentication added soon.
 
+I will be restyling the index page to show the resources easier.
 
+Also I want to add pagination
 
 ## License
 
