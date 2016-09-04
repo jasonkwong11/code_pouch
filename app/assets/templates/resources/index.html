@@ -4,7 +4,10 @@
   <div>
     <h3>Categories</h3>
     <div ng-repeat="category in vm.getCategories()">
-
+      <label>
+        <input type="checkbox" ng-model="vm.filter[category]">
+        {{ category }}
+      </label>
     </div>
   </div>
 
@@ -16,7 +19,7 @@
     </div>
   </div>
 
-  <div ng-repeat="resource in vm.filteredList">
+  <div ng-repeat="resource in (vm.filteredList | filter:vm.filterByCategory) as filteredResources">
     <p><a ui-sref="show({id: {{resource.id}}})">{{resource.name}}</a> - {{resource.description}}</p>
   </div>
 </div>
