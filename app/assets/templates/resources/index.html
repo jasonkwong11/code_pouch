@@ -6,12 +6,13 @@
     <div class="category-button">
       <button class="btn btn-default categories" ng-click="showDetails = ! showDetails">Show Categories</button>
     </div>
-    <div ng-repeat="category in vm.getCategories()" ng-show="showDetails" class="col-md-3">
-      <label>
-        <input type="checkbox" ng-model="vm.filter[category]">
-        {{ category }}
-      </label>
-    </div>
+  </div>
+
+  <div ng-repeat="category in vm.getCategories()" ng-show="showDetails" class="col-md-3">
+    <label>
+      <input type="checkbox" ng-model="vm.filter[category]">
+      {{ category }}
+    </label>
   </div>
 
   <div class="col-md-12 search">
@@ -21,6 +22,8 @@
       <input ng-model="vm.search" ng-change="vm.refilter()" class="form-control" placeholder="e.g. Ruby, Rails, JavaScript" />
     </div>
   </div>
+
+  <hr>
 
   <br>
 
