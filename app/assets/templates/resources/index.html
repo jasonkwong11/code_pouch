@@ -8,11 +8,13 @@
     </div>
   </div>
 
-  <div ng-repeat="category in vm.getCategories()" ng-show="showDetails" class="col-md-3">
-    <label>
-      <input type="checkbox" ng-model="vm.filter[category]">
-      {{ category }}
-    </label>
+  <div class="row">
+    <div ng-repeat="category in vm.getCategories()" ng-show="showDetails" class="col-md-3">
+      <label>
+        <input type="checkbox" ng-model="vm.filter[category]">
+        {{ category }}
+      </label>
+    </div>
   </div>
 
   <div class="col-md-12 search">
