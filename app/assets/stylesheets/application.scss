@@ -74,14 +74,15 @@ $bright-blue: #0F72CA;
 
 body {
   font-family: $dosis;
-  background-color: #161515;
-  color: #f8f8f8;
+  background-color: $off-white;
+  color: $off-white;
 }
 
 .container {
   border: 1px solid;
   border-radius: 4px;
   padding-bottom: 27px;
+  background-color: #161515;
 }
 
 a {
@@ -108,6 +109,12 @@ a {
 
 hr {
   border: 1px solid white;
+}
+
+hr.main-list {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
