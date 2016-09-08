@@ -1,6 +1,7 @@
 angular
   .module("CodePouch", ["ui.router", "ngResource", "templates"])
   .config(function ($stateProvider, $urlRouterProvider) {
+    
     $stateProvider
       .state('home', {
         url: "/",
