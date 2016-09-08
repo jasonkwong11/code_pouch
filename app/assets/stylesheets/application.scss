@@ -76,7 +76,6 @@ body {
   font-family: $dosis;
   background-color: $off-white;
   color: $off-white;
-  padding-bottom: 30px;
 }
 
 .container {
@@ -84,6 +83,17 @@ body {
   padding-bottom: 27px;
   background-color: #161515;
   box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.75);
+}
+
+footer {
+  background-color: $base-brown;
+  height: 50px;
+  margin-top: 30px;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 15px;
 }
 
 a {
