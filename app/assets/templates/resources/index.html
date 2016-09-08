@@ -10,8 +10,8 @@
 
   <div class="row">
     <div ng-repeat="category in vm.getCategories()" ng-show="showDetails" class="col-md-3">
-      <label>
-        <input type="checkbox" ng-model="vm.filter[category]">
+      <label class="checkbox-custom-label">
+        <input type="checkbox" class="checkbox-custom" ng-model="vm.filter[category]">
         {{ category }}
       </label>
     </div>

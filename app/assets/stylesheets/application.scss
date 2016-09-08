@@ -42,6 +42,10 @@ $off-white: #FAEBD7;
 $bright-blue: #0F72CA;
 
 /* ======================
+1.2 REUSABLES
+====================== */
+
+/* ======================
 2.1 Navigation
 ====================== */
 
@@ -112,4 +116,11 @@ h1 {
 
 .category-section {
   margin-left: 15px;
+}
+
+@media (min-width: 992px){
+  .col-md-3 {
+    width: 20%;
+    margin-left: 17px;
+  }
 }
