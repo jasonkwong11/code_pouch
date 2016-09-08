@@ -29,8 +29,12 @@
 
   <br>
 
-  <div ng-repeat="resource in (vm.filteredList | filter:vm.filterByCategory) as filteredResources">
+  <div dir-paginate="resource in (vm.filteredList | filter:vm.filterByCategory | itemsPerPage: 10) as filteredResources">
     <p><a ui-sref="show({id: {{resource.id}}})">{{resource.name}}</a> - {{resource.description}}</p>
     <hr class="main-list">
+  </div>
+
+  <div>
+    <dir-pagination-controls template-url="pagination/mine.tpl.html"></dir-pagination-controls>
   </div>
 </div>

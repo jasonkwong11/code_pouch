@@ -17,6 +17,7 @@
 //= require angular-resource
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require dirPagination
 //= require app
 //= require_tree ./angular
 //= require_tree ../templates
