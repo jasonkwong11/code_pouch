@@ -38,7 +38,7 @@ MENU:
 $dosis: 'Dosis', sans-serif;
 $base-brown: #7E5B22;
 $lighter-base: #9e7635;
-$off-white: #FAEBD7;
+$off-white: #EFEFEF;
 $bright-blue: #0F72CA;
 
 /* ======================
@@ -76,13 +76,14 @@ body {
   font-family: $dosis;
   background-color: $off-white;
   color: $off-white;
+  padding-bottom: 30px;
 }
 
 .container {
-  border: 1px solid;
-  border-radius: 4px;
+  border-radius: 8px;
   padding-bottom: 27px;
   background-color: #161515;
+  box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.75);
 }
 
 a {
