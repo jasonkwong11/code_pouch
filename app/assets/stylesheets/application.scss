@@ -1,7 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Dosis';
+
+$dosis: 'Dosis', sans-serif;
+$base-brown: #7E5B22;
+$lighter-base: #9e7635;
+$off-white: #FAEBD7;
 
 body {
+  font-family: $dosis;
   background-color: #161515;
   color: #f8f8f8;
 }
@@ -26,4 +33,23 @@ body {
 
 hr {
   border: 1px solid white;
+}
+
+.navbar-default {
+  background-color: $base-brown;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $off-white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: $off-white;
+  background-color: $lighter-base;
+}
+
+.navbar-default .navbar-brand {
+  color: $off-white;
 }

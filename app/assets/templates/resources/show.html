@@ -1,6 +1,6 @@
 <div ng-controller="ResourceCtrl as vm">
   <h1>{{vm.resource.name}}</h1>
-  <h4><a href="{{vm.resource.url}}">{{vm.resource.url}}</a></h4>
+  <h4><a href="{{vm.resource.url}}" target="_blank">{{vm.resource.url}}</a></h4>
 
   <div class="votes">
     <button type="button" class="btn btn-default" ng-click="vm.downVote()">
