@@ -72,9 +72,14 @@ $bright-blue: #0F72CA;
 3.0 GENERAL
 ====================== */
 html {
-  position: relative;
   height: 100%;
-  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -82,7 +87,7 @@ body {
   background-color: $off-white;
   color: $off-white;
   position: relative;
-  height:100%;
+  min-height: 100%;
 }
 
 .container {
@@ -92,17 +97,25 @@ body {
   box-shadow: 4px 4px 14px 0px rgba(50, 50, 50, 0.75);
 }
 
+// .wrapper {
+//   max-height: 100%;
+//   overflow-y: auto;
+// }
+
 footer {
   background-color: $base-brown;
   height: 50px;
   margin-top: 30px;
-  bottom: 0;
   width:100%;
 }
 
 footer.navbar.navbar-bottom {
   margin-bottom: 0;
   border-radius: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 footer p {
