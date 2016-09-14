@@ -1,0 +1,7 @@
+<div ng-controller="CategoriesCtrl as vm">
+  <p>Hello {{vm.name}}</p>
+
+  <div ng-repeat="resource in vm.resources">
+    <p><a ui-sref="show({id: {{resource.id}}})">{{resource.name}}</a> - {{resource.description}}</p>
+  </div>
+</div>

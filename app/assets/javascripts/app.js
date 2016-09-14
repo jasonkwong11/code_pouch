@@ -25,6 +25,11 @@ angular
         url: '/resources/:id',
         templateUrl: 'resources/show.html',
         controller: 'ResourceCtrl'
-      });
+      })
+      .state("categories", {
+        url: '/categories/:name',
+        templateUrl: 'resources/categories.html',
+        controller: "CategoriesCtrl"
+      })
     $urlRouterProvider.otherwise('/');
   });
