@@ -9,6 +9,18 @@ function CategoriesCtrl($stateParams, Resource, $http, GetResourcesService) {
   //   });
   // });
 
+  // $http({
+  //   method: 'GET',
+  //   url: 'api/resources'
+  // })
+  // .then(function (data) {
+  //   self.resources = data.data.filter(function (result) {
+  //     if (result.category.toLowerCase() === self.name.toLowerCase()) {
+  //       return result;
+  //     }
+  //   });
+  // });
+
   GetResourcesService.getResources()
     .then(function (res) {
       self.resources = res.data.filter(function (result) {
