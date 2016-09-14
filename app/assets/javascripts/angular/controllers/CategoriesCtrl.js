@@ -10,8 +10,8 @@ function CategoriesCtrl($stateParams, Resource, $http, GetResourcesService) {
   // });
 
   GetResourcesService.getResources()
-    .then(function (data) {
-      self.resources = data.data.filter(function (result) {
+    .then(function (res) {
+      self.resources = res.data.filter(function (result) {
         if (result.category.toLowerCase() === self.name.toLowerCase()) {
           return result;
         }
